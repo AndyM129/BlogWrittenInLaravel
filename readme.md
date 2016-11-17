@@ -6,6 +6,9 @@ As title, this is a blog demo written in Laravel.
 
 
 
+
+
+
 ## 运行方法：
 
 ```Linux
@@ -19,15 +22,24 @@ php -S andy.local:8999 -t public
 
 
 
-## 版本日志
 
+
+
+## 版本日志
 - v0.0 Base Framwork: 搭建基础框架
+- v0.1 Add Admin: 添加后台管理模块
+
+
+
 
 
 
 ## 相关教程
 
 - [2016 版 Laravel 系列入门教程](http://www.golaravel.com/post/2016-ban-laravel-xi-lie-ru-men-jiao-cheng-yi/)
+
+
+
 
 
 
