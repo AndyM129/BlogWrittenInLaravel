@@ -29,5 +29,12 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/', 'HomeController@index');
     Route::get('/home', 'HomeController@index');
+    Route::get('/article/show/{id}', 'ArticleController@show');
+
     Route::get('/admin', 'Admin\HomeController@index');
+    Route::get('/admin/article', 'Admin\ArticleController@home');
+    Route::get('/admin/article/create', 'Admin\ArticleController@create');
+    Route::post('/admin/article/store', 'Admin\ArticleController@store');
+    Route::get('/admin/article/edit/{id}', 'Admin\ArticleController@edit');
+    Route::get('/admin/article/delete/{id}', 'Admin\ArticleController@delete');
 });

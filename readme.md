@@ -28,6 +28,9 @@ php -S andy.local:8999 -t public
 ## 版本日志
 - v0.0 Base Framwork: 搭建基础框架
 - v0.1 Add Admin: 添加后台管理模块
+    - 时区改为了北京
+    - jQuery 和 BootStrap 替换为了国内的 CDN，更快更稳定了
+    - 自定义404错误页
 
 
 
