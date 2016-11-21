@@ -31,6 +31,7 @@ php -S andy.local:8999 -t public
     - 时区改为了北京
     - jQuery 和 BootStrap 替换为了国内的 CDN，更快更稳定了
     - 自定义404错误页
+    - 添加文章与评论 及其管理模块
 
 
 
