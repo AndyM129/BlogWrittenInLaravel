@@ -27,7 +27,26 @@
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
-    Route::get('/', 'HomeController@index');
-    Route::get('/home', 'HomeController@index');
+    // 前台
+
+    //Route::get('/', 'HomeController@index');
+    //Route::get('/home', 'HomeController@index');
+    Route::get('/', 'ArticleController@home');
+    Route::get('/home', 'ArticleController@home');
+    Route::get('/article', 'ArticleController@home');
+    Route::get('/article/show/{id}', 'ArticleController@show');
+
+    //  后台
+
     Route::get('/admin', 'Admin\HomeController@index');
+    Route::get('/admin/article', 'Admin\ArticleController@home');
+    Route::get('/admin/article/show/{id}', 'Admin\ArticleController@show');
+    Route::get('/admin/article/create', 'Admin\ArticleController@create');
+    Route::post('/admin/article/store', 'Admin\ArticleController@store');
+    Route::get('/admin/article/edit/{id}', 'Admin\ArticleController@edit');
+    Route::get('/admin/article/delete/{id}', 'Admin\ArticleController@delete');
+
+    Route::get('/admin/comment', 'Admin\CommentController@home');
+    Route::get('/admin/comment/delete/{id}', 'Admin\CommentController@delete');
+
 });
